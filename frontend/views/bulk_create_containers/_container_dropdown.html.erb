@@ -14,14 +14,14 @@
             <div class="form-group required">
               <label class="col-sm-4 control-label"><%= I18n.t("plugins.bulk_create_containers.labels.instance_type") %></label>
               <div class="col-sm-8">
-                <%= select_tag("add_containers_instance_type", options_for_select([""].concat(instance_types.map{| instance_type| [I18n.t("enumerations.instance_instance_type.#{instance_type}", instance_type), instance_type]})), {:class => "form-control"}) %>
+                <%= select_tag("add_containers_instance_type", options_for_select([""].concat(instance_types.map{| instance_type| [I18n.t("enumerations.instance_instance_type.#{instance_type}", :default => instance_type), instance_type]})), {:class => "form-control"}) %>
                 <span id="instance_type_error"><%= I18n.t("plugins.bulk_create_containers.messages.instance_type_error") %></span>
               </div>              
             </div>
             <div class="form-group required">
               <label class="col-sm-4 control-label"><%= I18n.t("plugins.bulk_create_containers.labels.container_type") %></label>
               <div class="col-sm-8">
-                <%= select_tag("add_containers_container_type", options_for_select([""].concat(container_types.map{|container_type| [I18n.t("enumerations.container_type.#{container_type}", container_type), container_type]})), {:class => "form-control"}) %>
+                <%= select_tag("add_containers_container_type", options_for_select([""].concat(container_types.map{|container_type| [I18n.t("enumerations.container_type.#{container_type}", :default => container_type), container_type]})), {:class => "form-control"}) %>
                 <span id="container_type_error"><%= I18n.t("plugins.bulk_create_containers.messages.container_type_error") %></span>
               </div>
             </div>
