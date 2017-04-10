@@ -1,0 +1,18 @@
+en:
+  plugins:
+    bulk_create_containers:
+      actions:
+        add_containers: Add Containers
+      labels:
+        instance_type: Instance Type
+        container_type: Container Type
+        container_start: Container Start
+        container_end: Container End
+      messages:
+        container_type_error: Please select a Container Type
+        instance_type_error: Please select an Instance Type
+        container_start_error: Please enter an integer greater than 1
+        container_end_error: Please enter an integer greater than 2
+        container_range_order_error: Container End must be greater than Container Start
+        container_range_size_error: Please enter a range smaller than 100 containers
+        success: Containers added to Accession
