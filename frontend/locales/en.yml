@@ -11,8 +11,8 @@ en:
       messages:
         container_type_error: Please select a Container Type
         instance_type_error: Please select an Instance Type
-        container_start_error: Please enter an integer greater than 1
-        container_end_error: Please enter an integer greater than 2
-        container_range_order_error: Container End must be greater than Container Start
+        container_start_error: Please enter a positive integer
+        container_end_error: Please enter a positive integer greater than or equal to the Container Start value
+        container_range_order_error: Container End must be greater than or equal to Container Start
         container_range_size_error: Please enter a range smaller than 100 containers
         success: Containers added to Accession

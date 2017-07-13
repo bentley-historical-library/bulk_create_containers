@@ -66,7 +66,7 @@ $(function () {
         submit = false;
       }
 
-      if (!Number.isInteger(Number(container_end_val)) || !container_end_val || container_end_val < 2) {
+      if (!Number.isInteger(Number(container_end_val)) || !container_end_val || container_end_val < 1) {
         $("#container_end_error").css("display", "block");
         submit = false;
       }
@@ -86,7 +86,7 @@ $(function () {
         Number.isInteger(Number(container_start_val)) && 
         Number.isInteger(Number(container_end_val))) {
 
-        if (Number(container_start_val) >= Number(container_end_val)) {
+        if (Number(container_start_val) > Number(container_end_val)) {
           $("#container_range_order_error").css("display", "block");
           submit = false;
         } else if ((Number(container_end_val) - Number(container_start_val)) > 100) {
